@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #ffffff;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        height: 450px;
+        width: 300px;
+        background-color: white;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .card img {
+        height: 35%;
+        border-radius: 25px 25px 0 0;
+        width: 300px;
+      }
+
+      .card h3 {
+        /* position: relative;
+        left: 55px; */
+      }
+
+      .purchase {
+        display: flex;
+        height: 15%px;
+        width: 90%;
+        justify-content: space-around;
+        background-color: #8bc6ec;
+        background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+        border-radius: 10px;
+        align-items: center;
+      }
+
+      #img2 {
+        height: 70%;
+        width: 20%;
+        border-radius: 10px;
+      }
+      .payment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #190842;
+        /* background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px black;
+
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="download.jpeg" alt="" />
+
+        <h3>Order Summary</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, odit
+          modi quia veritatis .
+        </p>
+        <div class="purchase">
+          <img id="img2" src="download.jpeg" alt="" />
+          <p>Annual Plan</p>
+          <p>$9.99/year</p>
+          <a href="">Change</a>
+        </div>
+
+        <div class="payment">
+          <h4>Proceed to Payment</h4>
+        </div>
+
+        <p>Cancel Order</p>
+      </div>
+    </div>
+  </body>
+</html>
