@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 70vh;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 0.3px solid rgb(145, 141, 141);
+    border-radius: 10px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+.cardbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "one two three four"
+    "five six seven eight";
+    gap: 1rem;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.imagescontainer{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+.avatar{
+    height: 30px;
+    width: 30px;
+    border: 0.3px solid gray;
+    border-radius: 50%;
+    background-color: azure;
+    overflow: hidden;
+    margin-right: 0.6rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.author{
+    display: flex;
+}
+.content{
+    margin: 0.5rem;
+}
+.cardtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.category{
+    border: 0.5px solid rgb(129, 122, 122);
+    border-radius: 5px;
+}
+.card:hover .image{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+.cardtitlecontainer:hover .cardtitle{
+    color: rgb(176, 102, 245);
+}
+.name{
+    color: rgb(95, 95, 231);
+}
+.date{
+    color: rgb(99, 95, 95);
+}
+.carddescription{
+    display: flex;
+    justify-content: center;
+
+}
