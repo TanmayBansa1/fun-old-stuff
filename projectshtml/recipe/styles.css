@@ -1,0 +1,107 @@
+#navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0 15px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#brandname{
+
+    font-size: 5rem;
+    font-family: 'Honk', system-ui;
+
+}
+
+.navbar{
+    width: 100vw;
+    background-color: rgb(75, 193, 239);
+    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+footer{
+    width: 100vw;
+    background-image: linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );
+    font-size: 2rem;
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: #FC0 1px 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contentbox{
+    border: 2px solid yellowgreen;
+    padding: 25px;
+    box-shadow:
+    inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+#inglist{
+    list-style: circle;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    height: 300px;
+    width: 300px;
+    /* float: right; */
+    transition: all 1.5s linear 0.5s;
+    border-radius: 20px;
+}
+
+.images :hover{
+    transform: scale(1.1);
+}
+
+.gulabjamun{
+    display: flex;
+    padding: 20px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.barfi{
+    display: flex;
+    padding: 20px;
+}
+/* #barfi1{
+    transition: all 1.5s linear 0.4s;
+}
+#barfi1 :hover{
+    transform: scale(1.1);
+    background-color: aqua;
+} */
